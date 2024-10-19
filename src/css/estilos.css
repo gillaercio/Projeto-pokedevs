@@ -24,9 +24,17 @@ main {
   min-height: 100vh;
 }
 
+.pokedevs {
+  display: flex;
+  gap: 20px;
+}
+
 .cartao-pokedev {
   display: none;
   max-width: 360px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.511);
 }
 
 .tipo-eletrico {
@@ -100,7 +108,6 @@ main {
   font-size: 15px;
   padding: 0px 10px;
   max-height: 150px;
-  /* overflow-y: scroll; */
 }
 
 .cartao-pokedev .cartao-informacoes h3 {
@@ -112,4 +119,36 @@ main {
 .cartao-pokedev .cartao-informacoes .descricao p {
   max-height: 150px;
   overflow-y: scroll;
+}
+
+.listagem {
+  max-width: 200px;
+}
+
+.listagem .pokedev {
+  background-color: #6b727a;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  min-height: 70px;
+  transition: 0.15 ease-in-out;
+}
+
+.listagem .pokedev:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.511);
+}
+
+.listagem .pokedev.ativo {
+  background-color: #fa6668;
+}
+
+.listagem .pokedev img {
+  width: 25%;
 }
