@@ -1,7 +1,6 @@
 @charset "UTF-8";
 
 @media (max-width: 760px) {
-
   .pokedevs {
     display: flex;
     flex-direction: column;
@@ -41,5 +40,9 @@
     width: 45%;
     display: flex;
     flex-wrap: wrap;
+  }
+
+  .listagem .pokedev span {
+    font-size: 15px;
   }
 }
