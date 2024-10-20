@@ -4,6 +4,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-image: url(../imagens/background.png);
   background-size: cover;
+  background-position: center;
 }
 
 body::before {
@@ -108,17 +109,13 @@ main {
   font-size: 15px;
   padding: 0px 10px;
   max-height: 150px;
+  overflow-y: scroll;
 }
 
 .cartao-pokedev .cartao-informacoes h3 {
   font-size: 20px;
   border-bottom: 1px solid #bebebe;
   margin-bottom: 15px;
-}
-
-.cartao-pokedev .cartao-informacoes .descricao p {
-  max-height: 150px;
-  overflow-y: scroll;
 }
 
 .listagem {
